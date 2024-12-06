@@ -1,0 +1,426 @@
+@import url(https://db.onlinewebfonts.com/c/31a3bd3248e285356157b43f32c8e535?family=CCArea51Industrial);
+@import url(https://db.onlinewebfonts.com/c/c310e0d08a4c35f19b25f0461a482a29?family=Teacher+Varsity);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Teacher Varsity","CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-image: linear-gradient(180deg, hsla(338, 81%, 50%, 1) 0%, hsla(44, 97%, 54%, 1) 21%);
+}
+.page1{
+    background-image: linear-gradient(180deg, hsla(338, 81%, 50%, 1) 0%, hsla(188, 77%, 46%, 1) 21%);
+    color:#000000
+}
+#heading{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+#heading h1{
+    font-size: 50px;;
+    margin-bottom: 25px;
+    position: relative;
+}
+#heading h1::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 4px;
+    display:block;
+    margin:0 auto;
+
+}
+#heading p{
+    font-size: 20px;
+    color:#98052e;
+    margin-bottom: 35px;
+    padding:10px 20px ;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about-img{
+    flex:1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    overflow:hidden;
+}
+.about-img img{
+    width:100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-content{
+    flex:1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about-img:hover img{
+    transform: scale(1.1);
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color:#000000
+}
+.about-content p{
+    font-size:18px ;
+    line-height: 1.5;
+    color:#000000;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding:0px 20px;     
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding:0px;
+    }
+    .about{
+        padding:20px;
+        flex-direction: column;
+    }
+    .about-img{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding:0px;
+        font-size: 16px;
+    }
+    
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, rgba(27,184,209,1) 0%, rgba(252,192,24,1) 50%, rgba(231,26,100,1) 100%);
+    padding: 20px; /* Added padding for better spacing */
+}
+.page2 h2{
+    margin-bottom: auto;
+}
+.page2 .custom1 {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    padding:0;
+    margin-top: 10px;;
+}
+
+.page2 .custom1::before {
+    content: '';
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, hsla(188, 77%, 46%, 1) 0%, hsla(44, 97%, 54%, 1) 100%);
+    clip-path: (25% at right 60%);
+    z-index: 1; /* Ensure it's behind the content */
+}
+
+.page2 .custom1::after {
+    content: '';
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#885cba, rgb(48, 101, 134));
+    clip-path: circle(15% at 10% 10%);
+    z-index: 2; /* Ensure it's above the background */
+}
+
+.page2 .container2 {
+    position: relative;
+    z-index: 3; /* Ensure it is above the gradients */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 120px 0;
+    gap: 20px; /* Added gap for spacing between cards */
+}
+
+.container2 .card {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px) saturate(180%);
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.container2 .card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.container2 .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.container2 .card:hover .content {
+    opacity: 1;
+}
+
+.container2 .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgb(12, 16, 19);
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.container2 .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .card .content .contentBx h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container2 .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container2 .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 15px; /* Added gap for spacing between icons */
+}
+
+.container2 .card .sci li {
+    list-style: none;
+    margin: 0;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s; /* Combined transitions for smoother effect */
+    transition-delay: calc(0 * 1s * var(--i));
+}
+
+.container2 .card .sci li a {
+    color: white;
+    font-size: 24px;
+}
+
+.container2 .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, rgba(252,192,24,1) 0%, rgba(231,26,100,1) 100%);;
+    padding: 20px; /* Added padding for better spacing */
+}
+.page3 h2{
+    margin-bottom: auto;
+}
+.page3 .custom2 {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    padding:0;
+    margin-top: 10px;;
+}
+
+.page3 .custom2::before {
+    content: '';
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, hsla(44, 97%, 54%, 1) 0%, hsla(338, 81%, 50%, 1) 100%);
+    clip-path: (25% at right 60%);
+    z-index: 1; /* Ensure it's behind the content */
+}
+
+.page3 .custom2::after {
+    content: '';
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#885cba, rgb(48, 101, 134));
+    clip-path: circle(15% at 10% 10%);
+    z-index: 2; /* Ensure it's above the background */
+}
+
+.page3 .container3 {
+    position: relative;
+    z-index: 3; /* Ensure it is above the gradients */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 120px 0;
+    gap: 20px; /* Added gap for spacing between cards */
+}
+
+.container3 .card {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px) saturate(180%);
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.container3 .card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.container3 .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.container3 .card:hover .content {
+    opacity: 1;
+}
+
+.container3 .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgb(12, 16, 19);
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.container3 .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container3 .card .content .contentBx h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container3 .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container3 .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 15px; /* Added gap for spacing between icons */
+}
+
+.container3 .card .sci li {
+    list-style: none;
+    margin: 0;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s; /* Combined transitions for smoother effect */
+    transition-delay: calc(0 * 1s * var(--i));
+}
+
+.container3 .card .sci li a {
+    color: white;
+    font-size: 24px;
+}
+
+.container3 .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}

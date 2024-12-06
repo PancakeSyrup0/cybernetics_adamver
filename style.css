@@ -1,0 +1,203 @@
+@import url(https://db.onlinewebfonts.com/c/31a3bd3248e285356157b43f32c8e535?family=CCArea51Industrial);
+@import url(https://db.onlinewebfonts.com/c/c310e0d08a4c35f19b25f0461a482a29?family=Teacher+Varsity);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fcc018;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.cursor{
+  height:20px;
+  width: 20px;
+  border-radius: 50%;
+  position:fixed;
+  background-color:#00f2ff ;
+  z-index: 8;
+  mix-blend-mode: difference;
+  
+}
+.main {
+  background-color: #0f0d0d;
+}
+
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: "CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 9;
+}
+
+#nav {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#nav img {
+  height: 100px;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+#nav #circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fcc018;
+}
+
+#nav h4 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#nav h4:nth-child(1) {
+  border-bottom: 2px solid #ffff;
+}
+
+.page1 h1 {
+  font-size: 8vw; /*helps in responsiveness of the text when resizing the webpage*/
+
+  font-weight: 400;
+  margin-top: 12vmax;
+  margin-left: 6vmax;
+}
+
+.page1 h2 {
+  font-size: 8vw; /*helps in responsiveness of the text when resizing the webpage*/
+
+  font-weight: 300;
+  margin-left: 26vmax;
+}
+
+.page1 video {
+  width: 60%;
+  
+  margin-top: 10vw;
+  position:relative;
+  left:50%;
+  transform:translate(-50%,0);
+}
+.page2{
+  min-height: 80vh;
+  width:100%;
+  padding:100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  font-family: "Teacher Varsity","CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 9;
+}
+
+.page2 h1{
+  font-size: 5vw;
+  font-weight: 500;
+  /*color:red;*/
+  color:#111
+
+}
+
+.page2-container{
+  height:60vh;
+  width:100%;
+  /*background-color: red;*/
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  /*padding : 0 5vw;*/
+
+}
+
+.page2-left{
+  /*background-color: blue;*/
+  width: 38%; 
+}
+
+.page2-right{
+  /*background-color: blue;*/
+  width: 30%; 
+}
+
+.page2-left h2{
+  font-size: 4vw;
+  font-weight:300;
+  /*color:red*/
+  color:#111;
+  line-height: 4vw;
+}
+
+.page2-right p{
+  font-size: 2vmax;
+  /*color: red;*/
+  color:#111
+}
+
+.page2-right button{
+  width:100%;
+  border-radius: 50px;
+  border:none;
+  padding: 4px 0;
+  background-color: #ffde85;
+  color: black;
+  margin-top: 20px;
+}
+
+.page3{
+  min-height: 100vh;
+  width:100%;
+  
+  padding-top: 100px;
+  position: relative;
+  z-index: 9;
+  font-family: "Teacher Varsity","CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.page3 h1{
+  font-size: 6.8vw;
+  font-weight: 300;
+  color:#111;
+  margin-left: 100px;
+}
+
+.page3-part1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page3-part1 img{
+  height:400px;
+  width:auto;
+  margin-top: 180px;
+}
+
+.page4{
+  min-height: 100vh;
+  width:100%;
+  position: relative;
+  z-index: 9;
+  font-family: "Teacher Varsity","CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.page5{
+  min-height: 100vh;
+  width:100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index:9 ;
+  font-family: "Teacher Varsity","CCArea51Industrial",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
